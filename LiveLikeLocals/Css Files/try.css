@@ -1,21 +1,49 @@
+.booking-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 20vh; /* Adjust to center vertically */
+}
+
+.booking-button {
+  padding: 8px 10px;
+  background-color: #039292;;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.booking-button:hover {
+  background-color: #14d9d9;
+  transform: scale(1.05);
+}
+
+.lead {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
-    font-family: "Montserrat", sans-serif;
-    /* font-family: Arial, sans-serif; */
-    background-color: #f9f9f9;
-    /* background: linear-gradient(90deg, #F8E5C3, #F2CCB2); */
-
+nav, nav .navbar, nav .navbar a, nav ul li a { 
+  font-family: "Montserrat" !important;
 }
+
+body { 
+    /* font-family: "Montserrat", sans-serif; */
+    font-family: Arial, sans-serif;  
+    background-color: #f9f9f9; 
+    /* background: linear-gradient(90deg, #F8E5C3, #F2CCB2); */
+} 
 
 .container {
     max-width: 1200px;
     z-index:-1;
-    
     margin: 50px auto;
     margin-top: 80px;
     text-align: center;
@@ -28,12 +56,12 @@ h2 {
     font-size: 2rem;
     color: #333;
 }
+
 button:hover {
     background-color: #1F8576;
     transform: scale(1.05);
     transition: all 0.3s ease;
 }
-
 
 h2 span {
     color: #AD1457;
@@ -105,9 +133,6 @@ h2 span {
     background-color: #e6006f;
 }
 
-/* nav, .navbar, .navbar a, nav ul li a { */
-/*font-family: "Montserrat",sans-serif !important; Replace 'Arial' with the desired font */
-/* } */
   nav{
     width: 100%;
     position: fixed;
@@ -188,7 +213,6 @@ h2 span {
     position: relative;
   }
   
-  
   .footlinks h4::before{
     content: "";
     position: absolute;
@@ -227,6 +251,7 @@ h2 span {
     align-items: center;
     border-radius: 20px;
     transition: ease 0.30s;
+    text-decoration: none;
   }
   
   .social a:hover{

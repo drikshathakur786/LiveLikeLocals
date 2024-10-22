@@ -5,24 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | LiveLikeLocals</title>
-    <link rel="icon" href="../logo.png">
-    <link rel="stylesheet" type="text/css" href="../Css Files/contact.css">
+    <link rel="icon" href="../Images/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+
+
 </head>
 <style>
-    
-    body {
+
+body {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Changed from center to flex-start */
-    background-color: #000000;
+    align-items: flex-start; 
+    background-color: #ebebeb;
     position: relative;
-    overflow-y: auto; /* Allows scrolling */
-    min-height: 100vh; /* Ensures the body covers at least the entire viewport */
-    padding-top: 40px;
+    overflow-y: hidden; 
+    min-height: 100vh; 
+    padding-top: 80px;
+    font-family: 'Poppins', sans-serif;
 }
 
 body::before {
@@ -33,6 +36,7 @@ body::before {
     background-repeat: no-repeat;
     filter: blur(7px);
     position: absolute;
+    flex-wrap: wrap;
     top: 0;
     left: 0;
     width: 100%;
@@ -42,71 +46,37 @@ body::before {
 
 .contact-container {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    max-width: 900px;
+    max-width: 750px;
+    max-height: 600px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
     border-radius: 8px;
     margin: 20px;
+    overflow: hidden;
 }
 
-
-/* body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #000000;
-    position: relative;
-    overflow-y: hidden; 
-    min-height: 100vh; 
-    position: relative;
-    z-index: 1;
-    padding-top:40px;
-}
-
-body::before {
-    content: ""; 
-    background-image: url('bgg.jpg'); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: blur(7px); 
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;  
-} */
 .other-content {
-    padding-bottom: 100px; /* Adjust this value to ensure there's enough space */
+    padding-bottom: 100px; 
 }
-/* .contact-container {
-    display: flex;
-    width: 100%;
-    max-width: 900px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* overflow: hidden; 
-    background-color: #ffffff;
-    border-radius: 8px; 
-    margin: 20px;  
-} */
 
 .contact-form {
     flex: 1;
-    padding: 50px;
+    padding: 35px;
     
 }
 
 .contact-form h1 {
+    font-family: 'Libre Baskerville', serif;
     font-size: 36px;
     margin-bottom: 10px;
 }
 
 .contact-form p {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: #666;
+    font-family: 'Crimson Text', serif;
 }
 
 .contact-form input,
@@ -116,32 +86,33 @@ body::before {
     padding: 10px;
     border: 1px solid #ddd;
     font-size: 16px;
-    border-radius: 4px; /* Added border radius for consistency */
+    border-radius: 4px; 
 }
 
 .contact-form input[type="date"] {
-    width: 48%; /* Adjusted to fit better */
+    width: calc(50% - 10px); 
+    margin-right: 10px; 
 }
 
 .contact-form textarea {
-    height: 80px;
-    resize: vertical; /* Allows vertical resizing only */
+    height: 60px;
+    resize: vertical;
 }
 
 .contact-form button {
-    width: 120px; /* Increased button width */
+    width: 120px; 
     padding: 10px;
     cursor: pointer;
-    background-color: white; /* Initial background color */
-    color: black; /* Initial text color */
-    border: 2px solid black; /* Border styling */
-    border-radius: 4px; /* Added border radius for consistency */
+    background-color: white;
+    color: black; 
+    border: 2px solid black;
+    border-radius: 4px; 
     transition: background-color 0.3s, color 0.3s; 
 }
 
 .contact-form button:hover {
     background-color: black;
-    color: white; /* Inverted text color on hover */
+    color: white; 
 }
 
 .contact-image {
@@ -155,10 +126,8 @@ body::before {
 .contact-image img {
     width: 100%;
     height: 100%;
-     object-fit: cover; 
+    object-fit: cover; 
 }
-
-/* Navbar styles from main CSS */
 
 nav {
     width: 100%;
@@ -170,27 +139,27 @@ nav {
     justify-content: space-between;
     top: 0;
     left: 0;
-    z-index: 1000; /* Ensure it stays on top of other content */
-  }
-  
-  nav .logo {
+    z-index: 1000;
+}
+
+nav .logo {
     width: 150px;
     margin: 2vh;
     margin-left: 8%;
-  }
-  
-  nav ul li {
+}
+
+nav ul li {
     list-style: none;
     display: inline-block;
     margin-left: 40px;
-  }
-  
-  .navbar {
+}
+
+.navbar {
     display: flex;
     margin-right: 4vh;
-  }
-  
-  .navbar a {
+}
+
+.navbar a {
     color: white;
     font-size: 18px;
     padding: 10px 22px;
@@ -198,21 +167,21 @@ nav {
     font-weight: 500;
     text-decoration: none;
     transition: ease 0.40s;
-  }
-  
-  .navbar a:hover, .navbar a.active {
+}
+
+.navbar a:hover, .navbar a.active {
     background: white;
     color: black;
     box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
     border-radius: 5px;
-  }
-  
-  nav ul li a {
+}
+
+nav ul li a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 17px;
-  }
-  
+}
+
 </style>
 <body class="contact-us">
     <nav>
@@ -251,9 +220,53 @@ nav {
         </div>
 
 
-       
-   
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    let email = document.querySelector('input[type="email"]').value;
+    let name = document.querySelector('input[type="text"]').value;
+    let phone = document.querySelector('input[type="tel"]').value;
+    let date = document.querySelector('input[type="date"]').value;
+    let message = document.querySelector('textarea').value;
+
+    // Email validation
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address.");
+        return;
+    }
+
+    // Name validation (only alphabets and spaces allowed)
+    const namePattern = /^[a-zA-Z\s]+$/;
+    if (!namePattern.test(name)) {
+        alert("Please enter a valid name. Only alphabets and spaces are allowed.");
+        return;
+    }
+
+    // Phone number validation (10 digits only)
+    const phonePattern = /^\d{10}$/;
+    if (!phonePattern.test(phone)) {
+        alert("Please enter a valid 10-digit phone number. Only numbers are allowed.");
+        return;
+    }
+
+    // Date validation (should not be empty)
+    if (date === "") {
+        alert("Please select a date.");
+        return;
+    }
+
+    // Message validation (optional: check if message is not empty)
+    if (message.trim() === "") {
+        alert("Please enter your message.");
+        return;
+    }
+
+    // If all validations pass
+    alert("Form submitted successfully!");
+    this.reset(); // Reset the form fields after submission
+});
+    </script> 
 </body>
 </html>
-
-  

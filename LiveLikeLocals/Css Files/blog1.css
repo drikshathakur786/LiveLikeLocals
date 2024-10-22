@@ -6,24 +6,30 @@
     --dark: #3c393d;
     --exDark: #2b2b2b;
 }
+
 *{
     padding: 0;
     margin: 0;
     font-family: var(--Quicksand);
 }
+
 body{
     line-height: 1.4;
     color: var(--dark);
+    background-color: #ffffff;
 }
+
 img{
     width: 100%;
     display: block;
 }
+
 .container{
     max-width: 1320px;
     margin: 0 auto;
     padding: 0 1.2rem;
 }
+
 .banner{
     flex: 1;
     display: flex;
@@ -31,18 +37,19 @@ img{
     justify-content: center;
     text-align: center;
     color: #fff;
-
-
 }
+
 .banner-title{
     font-size: 3rem;
     font-family: var(--Playfair);
     line-height: 1.2;
 }
+
 .banner-title span{
     font-family: var(--Playfair);
     color: var(--exDark);
 }
+
 .banner p{
     padding: 1rem 0 2rem 0;
     font-size: 1.2rem;
@@ -51,6 +58,7 @@ img{
     font-weight: 300;
     word-spacing: 2px;
 }
+
 .banner form{
     background: #fff;
     border-radius: 2rem;
@@ -59,8 +67,6 @@ img{
     justify-content: space-between;
 }
 
-
-/* design */
 .design-item .design-img span {
     color: #ff4081; /* Desired color */
 }
@@ -68,29 +74,36 @@ img{
 .design{
     padding: 4.5rem 0;
 }
+
 .title{
     text-align: center;
     padding: 1rem 0;
 }
+
 .title h2{
     font-family: var(--Playfair);
     font-size: 2.4rem;
 }
+
 .title p{
     text-transform: uppercase;
     padding: 0.6rem 0;
 }
+
 .design-content{
     margin: 2rem 0;
 }
+
 .design-item{
     cursor: pointer;
     margin: 1.5rem 0;
 }
+
 .design-img{
     position: relative;
     overflow: hidden;
 }
+
 .design-img::after{
     position: absolute;
     content: "";
@@ -101,12 +114,15 @@ img{
     
     background: rgba(0, 0, 0, 0.3); 
 }
+
 .design-img img{
     transition:  all 0.5s ease;
 }
+
 .design-item:hover img{
     transform: scale(1.2);
 }
+
 .design-img span:first-of-type{
     position: absolute;
     z-index: 1;
@@ -116,6 +132,7 @@ img{
     color: #fff;
     padding: 0.25rem 1rem;
 }
+
 .design-img span:last-of-type{
     position: absolute;
     z-index: 1;
@@ -125,6 +142,7 @@ img{
     font-weight: 700;
     font-size: 1.1rem;
 }
+
 .design-title{
     padding: 1rem;
     font-size: 1.2rem;
@@ -132,6 +150,7 @@ img{
     width: 70%;
     margin: 0 auto;
 }
+
 .design-title a{
     color: var(--dark);
     text-decoration: none;
@@ -139,17 +158,19 @@ img{
     font-family: var(--Playfair);
 }
 
-/* blog */
 .blog{
     background: #f9f9f9;
     padding: 4.5rem 0;
 }
+
 .blog-content{
     margin: 2rem 0;
 }
+
 .blog-img{
     position: relative;
 }
+
 .blog-img span{
     position: absolute;
     bottom: 10px;
@@ -159,27 +180,32 @@ img{
     font-size: 1.4rem;
     padding: 0.3rem 0.6rem;
 }
+
 .blog-text{
     margin: 2.2rem 0;
     padding: 0 1rem;
 }
+
 .blog-text span{
     font-weight: 300;
     display: block;
     padding-bottom: 0.5rem;
 }
+
 .blog-text h2{
     font-family: var(--Playfair);
     padding: 1rem 0;
     font-size: 1.65rem;
     font-weight: 500;
 }
+
 .blog-text p{
     font-weight: 300;
     font-size: 1.1rem;
     opacity: 0.9;
     padding-bottom: 1.2rem;
 }
+
 .blog-text a{
     font-family: var(--Roboto);
     font-size: 1.1rem;
@@ -191,58 +217,54 @@ img{
     padding: 0.55rem 1.2rem;
     transition: all 0.5s ease;
 }
+
 .blog-text a:hover{
     background: var(--exDark);
 }
 
-/* about */
 .about{
     padding: 4.5rem 0;
 }
+
 .about-text{
     margin: 2rem 0;
 }
+
 .about-text > p{
     font-size: 1.1rem;
     padding: 0.6rem 0;
     opacity: 0.8;
 }
 
-/* footer */
 .footer{
-
     width: 100%;
     background-color: rgb(0, 0, 0);
-
-
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  .foot{
+}
+
+.foot{
     padding: 20px 0;
-  }
-  
-  .footer-content{
+}
+
+.footer-content{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     
-  }
-  
-  
-  .footlinks h4{
+}
+
+.footlinks h4{
     margin-top: 30px;
     font-size: 20px;
     font-weight: 600;
     color: white;
     margin-bottom: 30px;
     position: relative;
-  }
-  
-  
-  .footlinks h4::before{
+}
+
+.footlinks h4::before{
     content: "";
     position: absolute;
     height: 2px;
@@ -250,25 +272,25 @@ img{
     left: 0;
     bottom: -7px;
     background: white;
-  }
-  
-  .footlinks ul li{
+}
+
+.footlinks ul li{
     margin-bottom: 15px;
-  }
-  
-  .footlinks ul li a{
+}
+
+.footlinks ul li a{
     font-size: 17px;
     color: #dddddd;
     display: block;
     transition: ease 0.30s;
-  }
-  
-  .footlinks ul li a:hover{
+}
+
+.footlinks ul li a:hover{
     transform: translate(6px);
     color: white;
-  }
-  
-  .social a{
+}
+
+.social a{
     font-size: 25px;
     margin: 4px;
     height: 40px;
@@ -282,18 +304,16 @@ img{
     transition: ease 0.30s;
     text-decoration: none;
 }
+
 .social a:hover{
     transform: scale(1.2);
-  }
-  
-  .end{
-    text-align: center;
+}
 
-    /* padding-top: 60px; */
-    /* padding-bottom: 12px; */
+.end{
+    text-align: center;
     padding: 60px 0 12px 0;
-  }
-  
+}
+
 .end p{
     font-size: 15px;
     color: white;
@@ -301,7 +321,6 @@ img{
     font-weight: 300;
 }
 
-/* Media Queries */
 @media screen and (min-width: 540px){
     
     .navbar-nav a{
@@ -347,7 +366,6 @@ img{
 }
 
 @media screen and (min-width: 992px){
-   
     .blog-content{
         grid-template-columns: repeat(3, 1fr);
     }
@@ -367,9 +385,10 @@ img{
 
 
 nav, .navbar, .navbar a, nav ul li a {
-    font-family: 'Lucida Sans',sans-serif; /* Replace 'Arial' with the desired font */
-  }
-  nav{
+    font-family: "Montserrat"; /* Replace 'Arial' with the desired font */
+}
+
+nav{
     width: 100%;
     position: fixed;
     background-color: rgb(0, 0, 0);
@@ -378,28 +397,27 @@ nav, .navbar, .navbar a, nav ul li a {
     align-items: center;
     justify-content: space-between;
     z-index: 1000; /*fixxxxxxxxxx this*/
-  }
-  
-  nav .logo{
+}
+
+nav .logo{
     width: 150px;
     margin: 2vh;
     margin-left: 8%;
-  }
-  
-  nav ul li{
+}
+
+nav ul li{
     list-style: none;
     display: inline-block;
     margin-left: 40px;
-  }
-  
-  .navbar{
+}
+
+.navbar{
     display: flex;
     margin-right: 4vh;
     z-index: 5;
-  }
-  
-  
-  .navbar a{
+}
+
+.navbar a{
     color: white;
     font-size: 18px;
     padding: 10px 22px;
@@ -407,18 +425,17 @@ nav, .navbar, .navbar a, nav ul li a {
     font-weight: 500;   
     text-decoration: none;
     transition: ease 0.40s; 
-  }
-  
-  .navbar a:hover,.navbar a.active{
+}
+
+.navbar a:hover,.navbar a.active{
     background: white;
     color: black;
     box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
     border-radius: 5px;
-  }
-  
-  nav ul li a{
+}
+
+nav ul li a{
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 17px;
-  }
-  
+}
