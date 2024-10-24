@@ -12,7 +12,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet"
     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script src="index.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script> -->
+
     <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+    (function(){
+       emailjs.init("HVsFFnz7321Ldhl34");
+    })();
+ </script>
 </head>
 <style>
 /* Ensure only the hovered icon rotates */
@@ -279,8 +290,8 @@
 
     <div class="send">
         <form action="">
-            <input type="email" name="emailid" placeholder="E-mail" required>
-            <input type="submit" value="Subscribe">
+            <input type="email" name="emailid" id="emailss" placeholder="E-mail" required>
+            <input type="submit" value="Subscribe" onclick="sendMail()">
         </form>
     </div>
 
@@ -326,3 +337,8 @@
  
 </body>
 </html>
+
+
+    
+    <!-- Scroll to Top Button -->
+    <button onclick="topFunction()" id="scrollToTopBtn" style="display:none;position:fixed;bottom:20px;right:30px;z-index:99;background-color:#000;color:#fff;border:none;padding:10px;border-radius:5px;cursor:pointer;">⬆</button>
