@@ -10,9 +10,6 @@
 - 📱 **Responsive Design:** Fully optimized for a smooth experience on all devices, whether mobile, tablet, or desktop. 📲💻
 - 🎨 **Sleek & Stylish:** Professionally designed using **Bootstrap** to ensure a modern, visually appealing interface.
 
-## 🚀 Live Demo
-Explore our live site here: [LiveLikeLocals](https://github.com/drikshathakur786/LiveLikeLocals)
-
 ## 🛠️ Tech Stack
 
 - **Frontend:**
