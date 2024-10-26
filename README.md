@@ -19,20 +19,4 @@
 - **Platforms:**
   - 🗂️ **GitHub** for project hosting and version control.
 
-## 👥 Meet the Team
-
-- **Driksha Thakur**  
-  - 🆔 Roll Number: 2310991822  
-  - 📧 Email: driksha1822.be23@chitkara.edu.in  
-
-- **Gracy**  
-  - 🆔 Roll Number: 2310991827  
-  - 📧 Email: gracy1827.be23@chitkara.edu.in  
-
-- **Amish Pundir**  
-  - 🆔 Roll Number: 2310991771  
-  - 📧 Email: amisha1771.be23@chitkara.edu.in  
-
----
-
 🌍 **LiveLikeLocals** – Where every trip feels like home 🏡✨
