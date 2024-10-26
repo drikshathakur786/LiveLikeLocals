@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tour | LiveLikeLocals</title>
+    <link rel="icon" href="../Images/logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
@@ -308,7 +309,7 @@ nav, .navbar, .navbar a, nav ul li a {
     <section class="hero">
         <div class="text-center">
             <h2>Discover journeys woven by local hearts.</h2>
-            <!-- <button class="btn btn-cta mt-3">Get Started</button> -->
+          
         </div>
     </section>
 
@@ -337,34 +338,35 @@ nav, .navbar, .navbar a, nav ul li a {
 <section id="hosts" class="container my-5">
     <h2 class="text-center mb-4">Meet Our Hosts</h2>
     <div class="row">
-        <div class="col-md-3 mb-4"> <!-- Changed from col-md-6 to col-md-3 -->
+        
+        <div class="col-md-3 mb-4">
             <div class="card host-card p-3 text-center">
                 <img src="../Images/u1.jpg" class="img-fluid rounded-circle mb-3" alt="Host 1">
                 <h3>Jessica Anderson</h3>
                 <p>Expert in local cuisine and cultural tours.</p>
-                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hostModal" data-host="Jane Doe">View Profile</button>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hostModal" data-host="Jessica Anderson">View Profile</button>
             </div>
         </div>
-
-        <div class="col-md-3 mb-4"> <!-- Changed from col-md-6 to col-md-3 -->
+        
+        <div class="col-md-3 mb-4">
             <div class="card host-card p-3 text-center">
                 <img src="../Images/u2.jpg" class="img-fluid rounded-circle mb-3" alt="Host 2">
                 <h3>Olivia Grace</h3>
                 <p>Historian and city tour expert.</p>
-                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hostModal" data-host="John Smith">View Profile</button>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hostModal" data-host="Olivia Grace">View Profile</button>
             </div>
         </div>
-
-        <div class="col-md-3 mb-4"> <!-- New Host 3 -->
+        
+        <div class="col-md-3 mb-4">
             <div class="card host-card p-3 text-center">
                 <img src="../Images/u3.jpg" class="img-fluid rounded-circle mb-3" alt="Host 3">
                 <h3>Jack Smith</h3>
                 <p>Adventure guide and hiking enthusiast.</p>
-                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hostModal" data-host="Emily Johnson">View Profile</button>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hostModal" data-host="Jack Smith">View Profile</button>
             </div>
         </div>
-
-        <div class="col-md-3 mb-4"> <!-- New Host 4 -->
+        
+        <div class="col-md-3 mb-4">
             <div class="card host-card p-3 text-center">
                 <img src="../Images/u4.jpg" class="img-fluid rounded-circle mb-3" alt="Host 4">
                 <h3>Michael Brown</h3>
@@ -372,35 +374,12 @@ nav, .navbar, .navbar a, nav ul li a {
                 <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hostModal" data-host="Michael Brown">View Profile</button>
             </div>
         </div>
+
     </div>
 </section>
 
 
-    <!-- Reviews Section -->
-    <section id="reviews" class="container my-5">
-        <h2 class="text-center mb-4">User Reviews</h2>
-        <div id="reviews-section" class="mb-4">
-            <!-- Reviews will be dynamically inserted here -->
-        </div>
-        <div class="card p-4">
-            <h3>Submit a Review</h3>
-            <form id="review-form" onsubmit="submitReview(event)">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Your Name</label>
-                    <input type="text" class="form-control" id="name" required>
-                </div>
-                <div class="mb-3">
-                    <label for="experience" class="form-label">Experience</label>
-                    <input type="text" class="form-control" id="experience" required>
-                </div>
-                <div class="mb-3">
-                    <label for="review" class="form-label">Review</label>
-                    <textarea class="form-control" id="review" rows="4" required></textarea>
-                </div>
-                <button class="btn btn-primary" type="submit">Submit Review</button>
-            </form>
-        </div>
-    </section>
+   
 
     <!-- Contact Section -->
     <section id="contact" class="container my-5">
@@ -412,8 +391,14 @@ nav, .navbar, .navbar a, nav ul li a {
                     <input type="text" class="form-control" id="contact-name" required>
                 </div>
                 <div class="mb-3">
-                    <label for="host" class="form-label">Host Name</label>
-                    <input type="text" class="form-control" id="host" required>
+                    <label for="host" class="form-label">Choose a Host</label>
+                    <select class="form-select" id="host" required>
+                        <option value="" disabled selected>Select a host</option>
+                        <option value="Jessica Anderson">Jessica Anderson</option>
+                        <option value="Olivia Grace">Olivia Grace</option>
+                        <option value="Jack Smith">Jack Smith</option>
+                        <option value="Michael Brown">Michael Brown</option>
+                    </select>
                 </div>
                 <div class="mb-3">
                     <label for="message" class="form-label">Message</label>
@@ -423,6 +408,7 @@ nav, .navbar, .navbar a, nav ul li a {
             </form>
         </div>
     </section>
+    
    
     
     <!-- footer -->
@@ -470,11 +456,11 @@ nav, .navbar, .navbar a, nav ul li a {
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <!-- Experience details will be dynamically loaded here -->
+               
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Confirm Booking</button>
+                
                 </div>
             </div>
         </div>
@@ -488,7 +474,7 @@ nav, .navbar, .navbar a, nav ul li a {
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <!-- Host profile details will be dynamically loaded here -->
+                
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -497,59 +483,143 @@ nav, .navbar, .navbar a, nav ul li a {
         </div>
     </div>
 
-    <!-- Bootstrap JS and custom script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
 
-        // Handle booking experience and viewing host profile modals
+    <script>
+     
         document.getElementById('experienceModal').addEventListener('show.bs.modal', function (event) {
             var button = event.relatedTarget;
             var experience = button.getAttribute('data-experience');
             var modalTitle = document.querySelector('#experienceModalLabel');
             var modalBody = document.querySelector('#experienceModal .modal-body');
+    
             modalTitle.textContent = experience;
-            modalBody.textContent = 'Details about ' + experience + ' will be displayed here.';
+    
+            if (experience === "Traditional Cooking Class") {
+                modalBody.innerHTML = `
+                    <p>Join us for an authentic cooking experience where you’ll learn how to make traditional dishes using local ingredients. A local chef will guide you through the process, sharing tips and stories behind each recipe.</p>
+                    <ul>
+                        <li>Duration: 3 hours</li>
+                        <li>Location: Local kitchen in the city center</li>
+                        <li>Includes: Ingredients, recipe handout, and refreshments</li>
+                        <li>Capacity: Up to 8 participants</li>
+                        <li>Cost: $50 per person</li>
+                    </ul>
+                    <button id="confirmBookingButton" class="btn btn-primary mt-3">Confirm Booking</button>
+                `;
+            } else if (experience === "City Walking Tour") {
+                modalBody.innerHTML = `
+                    <p>Discover hidden gems and historical landmarks with a local guide. The tour will take you through popular sights and off-the-beaten-path locations.</p>
+                    <ul>
+                        <li>Duration: 2 hours</li>
+                        <li>Route: Main city landmarks, hidden alleys, and local markets</li>
+                        <li>Includes: Refreshments and a map of the tour route</li>
+                        <li>Cost: $20 per person</li>
+                    </ul>
+                    <button id="confirmBookingButton" class="btn btn-primary mt-3">Confirm Booking</button>
+                `;
+            } else {
+                modalBody.textContent = 'Details about ' + experience + ' will be displayed here.';
+            }
+    
+            
+            setTimeout(() => {
+                const confirmButton = document.getElementById('confirmBookingButton');
+                if (confirmButton) {
+                    confirmButton.addEventListener('click', function () {
+                        alert('Your booking for ' + experience + ' has been confirmed!');
+                       
+                        $('#experienceModal').modal('hide');
+                    });
+                }
+            }, 100); 
         });
+
+
 
         document.getElementById('hostModal').addEventListener('show.bs.modal', function (event) {
-            var button = event.relatedTarget;
-            var host = button.getAttribute('data-host');
-            var modalTitle = document.querySelector('#hostModalLabel');
-            var modalBody = document.querySelector('#hostModal .modal-body');
-            modalTitle.textContent = host;
-            modalBody.textContent = 'Details about ' + host + ' will be displayed here.';
-        });
 
-        // Review and contact form handling
-        function submitReview(event) {
-            event.preventDefault();
-            const name = document.getElementById('name').value;
-            const experience = document.getElementById('experience').value;
-            const review = document.getElementById('review').value;
-
-            const reviewSection = document.getElementById('reviews-section');
-            const newReview = document.createElement('div');
-            newReview.className = 'card p-3 mb-3';
-            newReview.innerHTML = `<strong>${name}</strong> on <em>${experience}</em>: <p>${review}</p>`;
-            reviewSection.appendChild(newReview);
-
-            document.getElementById('review-form').reset();
-            alert('Review submitted!');
-        }
-
-        function submitContactForm(event) {
-            event.preventDefault();
-            const contactName = document.getElementById('contact-name').value;
-            const host = document.getElementById('host').value;
-            const message = document.getElementById('message').value;
-
-            alert('Message sent to ' + host + ' from ' + contactName + ': ' + message);
-
-            document.getElementById('contact-form').reset();
-        }
+        const button = event.relatedTarget;
+        const host = button.getAttribute('data-host');
         
+      
+        const modalTitle = document.querySelector('#hostModalLabel');
+        const modalBody = document.querySelector('#hostModal .modal-body');
+        
+     
+        let hostDetails = '';
 
+        switch (host) {
+            case 'Jessica Anderson':
+                modalTitle.textContent = 'Jessica Anderson\'s Profile';
+                hostDetails = `
+                    <p>Jessica is an experienced chef specializing in traditional cuisine. She has been hosting cultural cooking classes for over 10 years, where she shares the rich history behind each dish. Her classes are immersive, offering insights into local ingredients and cooking methods.</p>
+                    <ul>
+                        <li><strong>Experience:</strong> 10+ years</li>
+                        <li><strong>Specialty:</strong> Traditional local dishes</li>
+                        <li><strong>Languages:</strong> English, French</li>
+                    </ul>
+                `;
+                break;
+            case 'Olivia Grace':
+                modalTitle.textContent = 'Olivia Grace\'s Profile';
+                hostDetails = `
+                    <p>Olivia is a passionate historian and expert in city tours. She has a degree in History and enjoys taking travelers through both famous and hidden historical sites, sharing stories and legends along the way.</p>
+                    <ul>
+                        <li><strong>Experience:</strong> 7+ years</li>
+                        <li><strong>Specialty:</strong> Historical landmarks and cultural sites</li>
+                        <li><strong>Languages:</strong> English, Spanish</li>
+                    </ul>
+                `;
+                break;
+            case 'Jack Smith':
+                modalTitle.textContent = 'Jack Smith\'s Profile';
+                hostDetails = `
+                    <p>Jack is an outdoor enthusiast and adventure guide who loves leading hiking and trekking tours. He knows the best trails and scenic spots around and ensures a safe yet thrilling experience for his guests.</p>
+                    <ul>
+                        <li><strong>Experience:</strong> 5+ years</li>
+                        <li><strong>Specialty:</strong> Hiking, outdoor adventure</li>
+                        <li><strong>Languages:</strong> English, German</li>
+                    </ul>
+                `;
+                break;
+            case 'Michael Brown':
+                modalTitle.textContent = 'Michael Brown\'s Profile';
+                hostDetails = `
+                    <p>Michael is a traditional crafts artist, specializing in pottery and woodwork. His workshops offer an authentic experience where participants can create their own unique pieces while learning about local craftsmanship techniques.</p>
+                    <ul>
+                        <li><strong>Experience:</strong> 15+ years</li>
+                        <li><strong>Specialty:</strong> Pottery, woodwork</li>
+                        <li><strong>Languages:</strong> English, Italian</li>
+                    </ul>
+                `;
+                break;
+            default:
+                modalTitle.textContent = 'Host Profile';
+                hostDetails = '<p>Host details will be displayed here.</p>';
+                break;
+        }
+
+  
+        modalBody.innerHTML = hostDetails;
+    });
+
+
+
+    function submitContactForm(event) {
+    event.preventDefault();
+    const name = document.getElementById('contact-name').value;
+    const selectedHost = document.getElementById('host').value;
+    const message = document.getElementById('message').value;
+
+    alert(`Message sent to ${selectedHost} from ${name}: ${message}`);
+}
+    
     </script>
+
+    
+
+
 </body>
 
 </html>
